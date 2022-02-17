@@ -2,6 +2,7 @@
 const router = require("express").Router()
 const knex = require('./database')
 // getting data from customers
+console.log("hello sandhya how are you")
 
 router.get('/customersdata', (req, res) => {
     knex().select('*').from('customers')
